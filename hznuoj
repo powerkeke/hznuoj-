@@ -1,0 +1,19 @@
+import java.util.Scanner;
+import java.math.BigInteger;
+public class Main {
+  public static void main(String args[]) {
+	  Scanner in=new Scanner (System.in);
+	  int t=in.nextInt();
+	  while(t-->0) {
+		  int ans=1;
+		  int[] p=new int [10010];
+		  int n=in.nextInt();
+		  int h=in.nextInt();
+		  for(int i=1;i<=n;i++) {
+			  p[i]=in.nextInt();
+			  if(p[i]==h)ans=i;
+		  }
+		  System.out.println(ans);
+	  }
+  }
+}
