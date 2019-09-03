@@ -1,0 +1,17 @@
+import java.util.Scanner;
+import java.math.BigInteger;
+public class Main {
+  public static void main(String args[]) {
+	  Scanner cin=new Scanner(System.in);
+	  int t=cin.nextInt(),g=1;
+	  while(t-->0) {
+	  BigInteger c=cin.nextBigInteger();
+	  BigInteger a=cin.nextBigInteger();
+	  System.out.print("Case ");
+	  System.out.print(g++);
+	  System.out.println(":");
+	  System.out.println(a.add(c));
+	  System.out.println();
+	  }
+  }
+}
